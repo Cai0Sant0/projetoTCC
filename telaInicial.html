@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ccc;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+        }
+        .main-image {
+            width: 100%;
+            height: 200px;
+            background-image: url('records.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            margin: 20px 0;
+        }
+        .main-image h2 {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            color: #fff;
+            font-size: 24px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .cards {
+            display: flex;
+            justify-content: space-between;
+        }
+        .card {
+            width: 23%;
+            background-color: #eee;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 10px;
+            font-size: 16px;
+        }
+        .card .heart-icon {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="profile-pic"></div>
+            <div class="search-bar">
+                <input type="text" placeholder="Busque por #dança #comida...">
+            </div>
+        </div>
+        <div class="main-image">
+            <h2>OS MAIS VISTOS PERTO DE VOCÊ</h2>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="casarao.jpg" alt="Casarão do Vinil">
+                <h3>CASARÃO DO VINIL</h3>
+                <div class="heart-icon">❤️</div>
+            </div>
+            <div class="card">
+                <img src="calculadora.png" alt="Restaurant">
+                <h3>Cadillac Burger</h3>
+            </div>
+            <div class="card">
+                <img src="library.jpg" alt="Library">
+                <h3>Biblioteca Municipal</h3>
+                <div class="heart-icon">❤️</div>
+            </div>
+            <div class="card">
+                <img src="museum.jpg" alt="Museum">
+                <h3>Museu de Arte</h3>
+                <div class="heart-icon">❤️</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
