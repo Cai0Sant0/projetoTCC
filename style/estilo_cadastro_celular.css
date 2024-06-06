@@ -19,12 +19,11 @@
     form {
         display: flex;
         flex-direction: column;
-        margin-left: -4em;
-        padding: 20px;
+        margin-left: -5em;
+        padding: 13px;
     }
-
     form input[type="text"], form input[type="email"], form input[type="password"] {
-        width: 12em;
+        width: 13.1em;
         height: 3em;
         padding: 10px;
         margin: 10px;
@@ -32,15 +31,16 @@
         border-radius: 10px;
         background-color: rgba(214, 31, 169, 0.195);
     }
-
-    #btn_enviar {
-        background-color: #FF69B4;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        width: 7em;
-        margin-left: 3em;
-    }
+    
+        #btn_enviar {
+            background-color: #FF69B4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 7em;
+            margin-left: 1em;
+        }
 }
+
