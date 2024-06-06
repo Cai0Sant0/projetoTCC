@@ -61,3 +61,45 @@ form input[type="password"] {
     width: 10em;
     margin-left: 42em;
 }
+
+@media screen and (min-width:360px) and (max-width:734.40px)  {
+
+    body{
+    background-image: linear-gradient(140deg, rgba(130, 10, 132, 0.822), white);
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    }
+
+    .caixa_form h2 {
+        margin-top: 1em !important;
+        margin-bottom: 24px !important;
+        margin-left: -3em !important;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-left: -5em;
+        padding: 13px;
+    }
+    form input[type="text"], form input[type="email"], form input[type="password"] {
+        width: 13.1em;
+        height: 3em;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: rgba(214, 31, 169, 0.195);
+    }
+    
+        #btn_enviar {
+            background-color: #FF69B4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 7em;
+            margin-left: 1em;
+        }
+}
