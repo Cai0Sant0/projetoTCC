@@ -1,137 +1,103 @@
 @charset "UTF-8";
 
-*{
-    border: 0px;
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-
-body{
-    background: linear-gradient(140deg, rgba(130, 10, 132, 0.822), white ) no-repeat;
+body {
+   background-image:  linear-gradient(140deg, rgba(130, 10, 132, 0.822), white );
     font-family: Arial, sans-serif;
-}
-
-.caixa_form {
     display: flex;
-    float: right;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    width: 55%;
-    border-radius: 40px 0px 0px 40px;
-    background-color: rgb(255, 255, 255);
-    padding: 6em;
+    margin: 0;
 }
-.caixa_form h1 {
-    margin-top: 2em;
-    margin-bottom: 40px;
-    margin-left: 5em;
-}
-
-form{
+.login-container {
     display: flex;
-    flex-direction: column;
-    margin-left: 8em;
-    margin-top: 2em;
-    padding: 20px;
-}
-
-form > label{
-    font-size: 1.2em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-form input[type="text"],
-form input[type="password"] {
-    width: 40em;
-    height: 5em;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
-    background-color: rgba(214, 31, 169, 0.195);
+    box-shadow: 13px 0px 10px rgb(0 0 0 / 10%);
+    max-width: 800px;
+    width: 100%;
+    overflow: hidden;
 }
-#btn_entrar {
+.left {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+.left img {
+    width: 150px;
+}
+.right {
+    padding: 40px;
+    width: 50%;
+}
+.right h2 {
+    margin-bottom: 20px;
+}
+.right input[type="text"],
+.right input[type="email"],
+.right input[type="password"] {
+    width: 93%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5);
+}
+.right button {
     background-color: #FF69B4;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 10em;
-    margin-left: 42em;
+    width: 100%;
+}
+.right button:hover {
+    background-color: #FF1493;
+}
+.right p {
+    margin-top: 20px;
 }
 
-.div_img{
-    float: left;
-}
+@media screen and (min-width:360px) and (max-width:734.40px) {
 
-.div_img img{
-    width: 308px;
-    height: 180px;
-}
-
-/*CELULAR*/
-@media screen and (min-width:360px) and (max-width:734.40px){
-
-    body {
-        background: linear-gradient(140deg, rgba(130, 10, 132, 0.822), white) no-repeat;
-        font-family: Arial, sans-serif;
-    }
-
-    .caixa_form {
+    .login-container {
         display: flex;
-        float: right;
-        flex-direction: column;
-        height: 103vh;
-        width: 2em;
-        border-radius: 40px 0px 0px 40px;
-        background-color: rgb(255, 255, 255);
-        padding: 6em;
-    }
-
-    .caixa_form h1 {
-        margin-top: 2em;
-        margin-bottom: 40px;
-        margin-left: -1em;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        margin-left: -5em;
-        margin-top: -1em;
-        padding: 17px;
-    }
-
-    form > label {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        width: 23em;
-    }
-
-    form input[type="text"], form input[type="password"] {
-        width: 13em;
-        height: 4em;
-        padding: 7px;
-        margin: 8px;
-        border: 1px solid #ccc;
+        background: rgba(255, 255, 255, 0.7);
         border-radius: 10px;
-        background-color: rgba(214, 31, 169, 0.195);
+        box-shadow: 13px 0px 10px rgb(0 0 0 / 10%);
+        max-width: 800px;
+        width: 95%;
+        overflow: hidden;
     }
 
-    #btn_entrar {
-        background-color: #FF69B4;
-        color: white;
-        padding: 10px 20px;
-        border: none;
+    .left {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 11px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: 43%;
+    }
+
+    .right {
+        padding: 34px;
+        width: 50%;
+    }
+
+    .right input[type="text"], .right input[type="email"], .right input[type="password"] {
+        width: 85%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
         border-radius: 5px;
-        cursor: pointer;
-        width: 8em;
-        margin-left: 3em;
-    }
-
-    .div_img img {
-        width: 146px;
-        height: 137px;
+        background: rgba(255, 255, 255, 0.5);
     }
 }

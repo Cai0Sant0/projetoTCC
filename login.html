@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="style/estilo_login.css">
 </head>
 <body>
-    <div class="caixa_form">
-        <h1>BEM VINDO AO TURISTAR</h1>
-        <form>
-            <label for="Email_NomeUsuLog">Email ou Nome de Usuário:</label>
-            <input type="text" name="Email_NomeUsuLog" id="Email_NomeUsuLog" placeholder="Ex: exemplo@gmail.com" required>
-
-            <label for="senhaLog">Senha:</label>
-            <input type="password" name="senha_usu" id="senhaLog" placeholder="Coloque aqui sua senha" required >
-        </form>
-        <button id="btn_entrar">ENTRAR</button>
-    </div>
-    <div class="div_img">
-        <img src="imgs/TURISTAR.png" alt="iconeTuristar">
+    <div class="login-container">
+        <div class="left">
+            <img src="imgs/TURISTAR.png" alt="Turistar Logo">
+        </div>
+        <div class="right">
+            <h2>LOGIN TURISTAR</h2>
+            <form>
+                <input type="text" placeholder="Email ou nome de usuário" required>
+                <input type="password" placeholder="Digite a sua senha" required>
+            </form>
+            <button id="btn_entrar">ENTRAR</button>
+            <p>Não tem conta? <a href="cadastro.html">Se inscreva!</a></p>
+        </div>
     </div>
 </body>
 </html>
