@@ -70,26 +70,30 @@ body {
         display: flex;
         background: rgba(255, 255, 255, 0.7);
         border-radius: 10px;
-        box-shadow: 13px 0px 10px rgb(0 0 0 / 10%);
-        max-width: 800px;
-        width: 95%;
+        box-shadow: 13px 0px 10px rgb(0 0 0 / 10%) !important;
+        max-width: 800px !important;
+        width: 95% !important;
         overflow: hidden;
     }
 
     .left {
         background: rgba(255, 255, 255, 0.7);
-        padding: 11px;
+        padding: 11px !important;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         text-align: center;
-        width: 43%;
+        width: 43% !important;
+    }
+
+    .left img {
+        width: 150px !important;
     }
 
     .right {
-        padding: 34px;
-        width: 50%;
+        padding: 34px !important;
+        width: 50% !important;
     }
 
     .right input[type="text"], .right input[type="email"], .right input[type="password"] {
