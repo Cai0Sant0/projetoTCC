@@ -42,7 +42,7 @@ body {
 .main-image {
     width: 100%;
     height: 200px;
-    background: url(../imgs/Casarão-do-Vinil.jpg), bottom;
+    background: url(../imgs/fundoDiscos.jpg), bottom;
     background-size: cover;
     position: relative;
     margin: 20px 0;
