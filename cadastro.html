@@ -11,23 +11,20 @@
     <div class="caixa_form">
         <h2>BEM-VINDO AO CADASTRAR DO TURISTAR</h2>
         
-        <form method="post">
-            <label for="email">Email:</label>
-            <input type="email" name="user_email" id="email" placeholder="Digite seu email" required>
-
-            <label for="nomeUsu">Nome do Usuário:</label>
-            <input type="text" name="user_nome" id="nomeUsu" placeholder="Crie um nome de usuário" required>
-
-            <label for="senhaUsu">Criar Senha:</label>
-            <input type="password" name="user_senha" id="senhaUsu" placeholder="Crie uma senha" required>
-
-            <label for="senhaUsu">Confirmar Senha:</label>
-            <input type="password" name="user_Confirmasenha" id="senhaUsuConfirma" placeholder="Confirme sua senha" required>
-            
-            <button id="btn_enviar">ENVIAR</button>
-        </form>
+        
+            <div id="form">
+                <label for="email">Email:</label>
+                <input type="email" name="user_email" id="email" placeholder="Digite seu email" required>
+                <label for="nomeUsu">Nome do Usuário:</label>
+                <input type="text" name="user_nome" id="nomeUsu" placeholder="Crie um nome de usuário" required>
+                <label for="senhaUsu">Criar Senha:</label>
+                <input type="password" name="user_senha" id="senhaUsu" placeholder="Crie uma senha" required>
+                <p>Já possui cadastro? <a href="login.html">Entre aqui!</a></p>
+                
+                <button id="btn_enviar">ENVIAR</button>
+            </div>
         
     </div>
-    <script src="js/cadastro.js"></script>
+    <script src="js/cadastro.js" type="module"></script>
 </body>
 </html>
