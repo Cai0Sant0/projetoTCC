@@ -16,7 +16,7 @@ btn_cadastro.addEventListener("click",()=>{
             cor: "#800",
             tipo: "ok"
         }
-      return Cxmsg.mostrar(config,"TENTE NOVAMENTE", "Falta de dados para o cadastro!");
+      return Cxmsg.mostrar(config,"TENTE NOVAMENTE!!!", "Falta de dados para o cadastro!");
     }
 
     const endpoint = `http://127.0.0.1:1880/cadastroUsu/${input_email.value}/${input_NomeUsu.value}/${input_Senha.value}`;
@@ -27,7 +27,8 @@ btn_cadastro.addEventListener("click",()=>{
         input_email.value = "";
         input_NomeUsu.value = "";
         input_Senha.value = "";
-        if(res.serverStatus == 2){
+        console.log(res);
+        if(res.affectedRows == 1){
             const config = {
                 cor: "blue",
                 tipo: "sn",
@@ -38,6 +39,7 @@ btn_cadastro.addEventListener("click",()=>{
             }
              return Cxmsg.mostrar(config,"CADASTRO REALIZADO!", "Ir para a tela de login ?");
         }
+        console.log("erro");
     })
         
 });
