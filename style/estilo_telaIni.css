@@ -62,13 +62,20 @@ body {
 }
 .card {
     cursor: pointer;
-    width: 24%;
+    width: 23%;
     background-color: #eee;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 7px 0px 10px rgb(4 4 4 / 26%);
     position: relative;
 }
+
+.card:hover{
+    scale: 1.1;
+
+    transition: 1s;
+}
+
 .card img {
     width: 100%;
     height: 150px;
@@ -81,6 +88,7 @@ body {
     font-weight: bolder;
     font-size: 1.2em;
 }
+
 
 @media screen and (min-width:360px) and (max-width:734.40px)  {
 
