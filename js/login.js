@@ -28,6 +28,17 @@ document.getElementById("btn_entrar").addEventListener("click",()=>{
             }
             return Cxmsg.mostrar(config,"ERRO!!!", "Email ou Senha não estão cadastrados!");
         }
-        window.open("../telaInicial.html","_self");
+        let usuValido = {
+            email: res[0].email_usu,
+            nome: res[0].nome_usu,
+            senha: res[0].senha_usu
+        }
+        let mathRandom = Math.random().toString(16).substr(2)
+        let token = mathRandom + mathRandom
+
+        localStorage.setItem('token', token);
+        localStorage.setItem('userLogado', JSON.stringify(usuValido))
+
+        window.location.href = "../telaInicial.html";
     })
 });
