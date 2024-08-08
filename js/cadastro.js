@@ -5,7 +5,7 @@ import { Cxmsg } from "./Cxmsg.js";
 const btn_cadastro = document.getElementById("btn_enviar");
 
 btn_cadastro.addEventListener("click",()=>{
-    // pegando os elementos do login
+    // pegando os elementos do cadastro
 
     let input_email = document.getElementById("email");
     let input_NomeUsu = document.getElementById("nomeUsu");
