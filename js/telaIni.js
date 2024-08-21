@@ -32,7 +32,7 @@ let fotoPerfil = document.querySelector(".fotoPerfil")
 fotoPerfil.addEventListener("click",()=>{
     const config = {
         cor: "#800",
-        tipo: "ok"
+        tipo: "aqrv"
     }
     Cxmsg.mostrar(config,"TESTE","TESTE");
 })

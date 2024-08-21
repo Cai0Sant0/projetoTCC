@@ -150,7 +150,9 @@ class Cxmsg{
 
     }
     else if (this.tipo == "aqrv"){
-      
+      let inputImg = document.createElement("input");
+      inputImg.setAttribute("type","file");
+      rodapeCaixa.appendChild(inputImg);
     }
 };
 
