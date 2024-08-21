@@ -1,3 +1,5 @@
+import { Cxmsg } from "./Cxmsg.js";
+
 //Verificação para ver se usuário está logado
 // if(localStorage.getItem("token") == null){
 //     alert("Você precisa estar logado para acessar esssa página")
@@ -21,4 +23,16 @@ cards.forEach((elemento)=>{
         endpoint = endpoint.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
         window.open(`locais/${endpoint}.html`);
     })
+});
+
+//Colocando imagem de perfil
+
+let fotoPerfil = document.querySelector(".fotoPerfil")
+
+fotoPerfil.addEventListener("click",()=>{
+    const config = {
+        cor: "#800",
+        tipo: "ok"
+    }
+    Cxmsg.mostrar(config,"TESTE","TESTE");
 })

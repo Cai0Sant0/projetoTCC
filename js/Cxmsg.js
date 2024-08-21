@@ -149,6 +149,9 @@ class Cxmsg{
       rodapeCaixa.appendChild(btn_nao);
 
     }
+    else if (this.tipo == "aqrv"){
+      
+    }
 };
 
    static ocultar=()=>{
