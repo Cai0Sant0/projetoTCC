@@ -149,43 +149,6 @@ class Cxmsg{
       rodapeCaixa.appendChild(btn_nao);
 
     }
-    else if (this.tipo == "aqrv"){
-      let inputImg = document.createElement("input");
-      inputImg.setAttribute("type","file");
-      corpoCaixa.appendChild(inputImg);
-
-
-
-      const btn_sim = document.createElement("button");
-      const btn_nao = document.createElement("button");
-    
-      const estilo_btn =
-      "background-color:"+this.cor+";"+
-      "color:#fff;"+
-      "padding: 10px 50px;"+
-      "border-radius: 5px;"+
-      "cursor: pointer;"+
-      "text-transform: uppercase;";
-
-      btn_sim.setAttribute("style", estilo_btn);
-      btn_sim.innerHTML = this.textos[0];
-
-      btn_nao.setAttribute("style", estilo_btn);
-      btn_nao.innerHTML = this.textos[1];
-
-      btn_sim.addEventListener("click",(evt)=>{
-         this.comando();
-         this.ocultar();
-      })
-
-      btn_nao.addEventListener("click",(evt)=>{
-         this.ocultar();
-      });
-
-      rodapeCaixa.appendChild(btn_sim);
-      rodapeCaixa.appendChild(btn_nao);
-
-    }
 };
 
    static ocultar=()=>{
