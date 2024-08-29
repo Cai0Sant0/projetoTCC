@@ -30,8 +30,7 @@ document.getElementById("btn_entrar").addEventListener("click",()=>{
         }
         let usuValido = {
             email: res[0].email_usu,
-            nome: res[0].nome_usu,
-            senha: res[0].senha_usu
+            nome: res[0].nome_usu
         }
         let mathRandom = Math.random().toString(16).substr(2)
         let token = mathRandom + mathRandom

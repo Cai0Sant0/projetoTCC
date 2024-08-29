@@ -1,15 +1,15 @@
 import { Cxmsg } from "./Cxmsg.js";
 
 //Verificação para ver se usuário está logado
-// if(localStorage.getItem("token") == null){
-//     alert("Você precisa estar logado para acessar esssa página")
-//     window.location.href = "../login.html"
-// }
+if(localStorage.getItem("token") == null){
+    alert("Você precisa estar logado para acessar esssa página")
+    window.location.href = "../login.html"
+}
 
 // Pegando o usuário logado do localStorage
-// let userLogado = JSON.parse(localStorage.getItem("userLogado"));
-// let msg = document.querySelector("#msg");
-// msg.innerHTML = `Seja Bem Vindo ${userLogado.nome}`;
+let userLogado = JSON.parse(localStorage.getItem("userLogado"));
+let msg = document.querySelector("#msg");
+msg.innerHTML = `Seja Bem Vindo ${userLogado.nome}`;
 
 // Pegando os cards
 
@@ -26,9 +26,6 @@ cards.forEach((elemento)=>{
 });
 
 //Colocando imagem de perfil
-
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
     let inputFoto = document.querySelector("#fileInput")
