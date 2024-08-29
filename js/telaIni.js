@@ -9,7 +9,7 @@ if(localStorage.getItem("token") == null){
 // Pegando o usuário logado do localStorage
 let userLogado = JSON.parse(localStorage.getItem("userLogado"));
 let msg = document.querySelector("#msg");
-msg.innerHTML = `Seja Bem Vindo ${userLogado.nome}`;
+msg.innerHTML = `Seja Bem Vindo(a) ${userLogado.nome}`;
 
 // Pegando os cards
 
@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             reader.onload = function(e) {
                 fotoPerfil.src = e.target.result;
+                console.log(fotoPerfil)
             }
             
             reader.readAsDataURL(file);
