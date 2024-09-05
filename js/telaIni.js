@@ -45,3 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// Saindo do perfil
+
+document.querySelector(".sair").addEventListener("click",()=>{
+    localStorage.clear()
+})
