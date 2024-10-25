@@ -8,23 +8,77 @@
     <title>Turistar Cadastro</title>
 </head>
 <body>
+
+<div class="screen">
+    
     <div class="caixa_form">
-        <h2>BEM-VINDO AO CADASTRAR DO TURISTAR</h2>
-        
-        
+
+        <h3>CADASTRO DE USUÁRIO</h3>
+
             <div id="form">
-                <label for="email">Email:</label>
-                <input type="email" name="user_email" id="email" placeholder="Digite seu email" required  autocomplete="off">
-                <label for="nomeUsu">Nome do Usuário:</label>
+                <label for="nomeUsu">Nome</label>
                 <input type="text" name="user_nome" id="nomeUsu" placeholder="Crie um nome de usuário" required autocomplete="off">
-                <label for="senhaUsu">Criar Senha:</label>
+                <label for="tel">Telefone</label>
+                <input type="text" name="user_tel" id="tel" placeholder="digite seu telefone" required autocomplete="off">
+                <label for="rua">Rua</label>
+                <input type="text" name="user_rua" id="rua" placeholder="Digite a sua rua" required autocomplete="off">
+                <label for="bairro">Bairro</label>
+                <input type="text" name="user_bairro" id="bairro" placeholder="Digite seu bairro" required autocomplete="off">
+                <label for="municipio">Município</label>
+                <input type="text" name="user_municipio" id="municipio" placeholder="digite seu municipio" required autocomplete="off">
+                <label for="ufs">Estado</label>
+                <select id="ufs" name="user_ufs">
+                    <option value="">Selecione uma UF</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+
+
+                <label for="email">Email</label>
+                <input type="email" name="user_email" id="email" placeholder="Digite seu email" required  autocomplete="off">
+                <label for="senhaUsu">Criar Senha</label>
                 <input type="password" name="user_senha" id="senhaUsu" placeholder="Crie uma senha" required>
-                <p>Já possui cadastro? <a href="login.html">Entre aqui!</a></p>
-                
-                <button id="btn_enviar">ENVIAR</button>
+                <p>Já possui cadastro? <a href="login.html"> Entre aqui!</a></p>
+                <div class="container">
+                    <button id="btn_enviar">ENVIAR</button>
+                </div>
             </div>
-        
+        </div>
+
+        <div class="logo">
+            <img src="imgs/TURISTAR.png" alt="Turistar Logo" id="logo">
+        </div>
     </div>
-    <script src="js/cadastro.js" type="module"></script>
+
+<script src="js/cadastro.js" type="module"></script>
+
+
+
+
 </body>
 </html>
