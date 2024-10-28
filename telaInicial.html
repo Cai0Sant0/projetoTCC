@@ -6,111 +6,52 @@
     <title>Home</title>
     <link rel="stylesheet" href="style/estilo_telaIni.css">
     <link rel="shortcut icon" href="imgs/TURISTAR.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <main class="container">
         <header class="header">
             <img src="imgs/foto_padrao.png" alt="" class="fotoPerfil">
-            <input type="file" name="" id="fileInput">
-            <nav class="search-bar">
-                <input type="text" placeholder="Busque por #dança #comida...">
-            </nav>
+            <input type="file" name="foto" id="fileInput">
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="telaInicial.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="color: black;">Meu perfil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link sair" href="#" style="color: black;">Sair</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link disable" aria-disabled="true" style="color: #c316d2;" ><img src="imgs/TURISTAR.png" alt="" style="width: 60px; height: 30px;"></a>
+                </li>
+              </ul>
         </header>
         <aside class="main-image">
             <h2 id="msg">OS MAIS VISTOS PERTO DE VOCÊ</h2>
         </aside>
         <section class="cards">
             <div class="card">
-                <img src="imgs/casarao_vinil.jpg" alt="Casarão do Vinil">
-                <h3>Casarão do Vinil</h3>
+                <img src="imgs/lazyparkfoto.jpg" alt="">
+                <h3>Lazy Park</h3>
             </div>
             <div class="card">
-                <img src="imgs/cadilac_burguer.jpeg" alt="Restaurante">
-                <h3>Cadillac Burger</h3>
+                <img src="imgs/assilRestaurante.png" alt="">
+                <h3>Assil Restaurante</h3>
             </div>
             <div class="card">
-                <img src="imgs/temploSalomao.jpg" alt="Biblioteca">
-                <h3>Templo de Salomão</h3>
-            </div>
-            <div class="card">
-                <img src="imgs/museu_imi.jpg" alt="Museu">
-                <h3>Museu da Imigração</h3>
-            </div>
-        </section>
-        <section class="cards">
-            <div class="card">
-                <img src="imgs/padaria_sb.png" alt="Padaria">
-                <h3>Padaria Santa Branca</h3>
-            </div>
-            <div class="card">
-                <img src="imgs/sisenor.webp" alt="Restaurante">
-                <h3>Sí Señor</h3>
-            </div>
-            <div class="card">
-                <img src="imgs/mercadao_do_espeto.jpg" alt="Restaurante">
-                <h3>Mercadão do Espeto</h3>
-            </div>
-            <div class="card">
-                <img src="imgs/villa_cafe.jpg" alt="Cafeteria">
+                <img src="imgs/cafeteria-vilarejo.jpg" alt="">
                 <h3>Vilarejo Café</h3>
             </div>
-        </section>
-        <section class="cards">
             <div class="card">
-                <img src="imgs/cantina_sm.jpg" alt="Restaurante">
-                <h3>Cantina San Marco</h3>
-                </div>
-            <div class="card">
-                <img src="imgs/Di_cunto.jpg" alt="Confeitaria">
-                <h3>Di cunto</h3>
-            </div>
-            <div class="card">
-                <img src="imgs/bravoBistro.webp" alt="Restaurante">
-                <h3>Bravo Bistrô</h3>
-            </div>
-            <div class="card">
-                <img src="imgs/casa_queijo.jpg" alt="Imagem de lanchonete">
-                <h3>Casa Pão de Queijo</h3>
-            </div>
-        </section>
-        <section class="cards">
-            <div class="card">
-                <img src="imgs/boteco_flor.jpg" alt="Bar">
+                <img src="imgs/boteco_flor.jpg" alt="Imagem de um bar">
                 <h3>Boteco Flor de Sal</h3>
-            </div>
-            <div class="card">
-                <img src="imgs/bolo01.jpg" alt="Confeitaria">
-                <h3>Armazém do Bolo</h3>
-            </div>
-            <div class="card">
-                <img src="imgs/temploSalomao.jpg" alt="Biblioteca">
-                <h3>Templo de Salomão</h3>
-            </div>
-            <div class="card">
-                <img src="imgs/museu_imi.jpg" alt="Museu">
-                <h3>Museu da Imigração</h3>
-            </div>
-        </section>
-        <section class="cards">
-            <div class="card">
-                <img src="imgs/casarao_vinil.jpg" alt="Casarão do Vinil">
-                <h3>Casarão do Vinil</h3>
-            </div>
-            <div class="card">
-                <img src="imgs/cadilac_burguer.jpeg" alt="Restaurante">
-                <h3>Cadillac Burger</h3>
-            </div>
-            <div class="card">
-                <img src="imgs/temploSalomao.jpg" alt="Biblioteca">
-                <h3>Templo de Salomão</h3>
-            </div>
-            <div class="card">
-                <img src="imgs/museu_imi.jpg" alt="Museu">
-                <h3>Museu da Imigração</h3>
             </div>
         </section>
     </main>
     <script type="module" src="js/telaIni.js"></script>
     <script type="module" src="js/Cxmsg.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
